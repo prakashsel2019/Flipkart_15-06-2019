@@ -9,6 +9,7 @@ def test_setup(request):
     from selenium import webdriver
     browser = "chrome"  # request.config.getoption("--browser")
     if browser == "chrome":
+        global driver
         driver = webdriver.Chrome(executable_path=data.PATH)
     elif browser == "firefox":
         driver = webdriver.Firefox()
