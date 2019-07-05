@@ -12,8 +12,8 @@ class TestMouseHover:
     def test_login(self):
         driver = self.driver
         lg = Login_page(driver)
-        lg.enter_username('7899091518')
-        lg.enter_password('Qspiderflipkart@123')
+        lg.enter_username(username)
+        lg.enter_password(password)
         lg.click_login()
 
     def test_search(self):
