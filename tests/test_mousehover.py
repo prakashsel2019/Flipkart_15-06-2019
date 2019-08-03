@@ -2,7 +2,6 @@ from pages.Loginpage import Login_page
 # from pages.homepage import HomePage
 import pytest
 
-from pages.dropdown import drop_down_page
 from pages.mousehover import mouse_hover_page
 from pages.Logoutpage import Logout_page
 
@@ -12,8 +11,8 @@ class TestMouseHover:
     def test_login(self):
         driver = self.driver
         lg = Login_page(driver)
-        lg.enter_username(username)
-        lg.enter_password(password)
+        lg.enter_username('7899091518')
+        lg.enter_password('Qspiderflipkart@123')
         lg.click_login()
 
     def test_search(self):
@@ -32,25 +31,25 @@ class TestMouseHover:
     def test_add_to_cart(self):
         sr.add_cart()
 
-    def test_remove_from_cart(self):
-        sr.remove_cart()
-        sr.switch_parent(pw)
+#     def test_remove_from_cart(self):
+#         sr.remove_cart()
+#         sr.switch_parent(pw)
 
-    def test_click_help_center(self):
-        sr.click_help_center()
+#     def test_click_help_center(self):
+#         sr.click_help_center()
 
-    def test_logout(self):
-        driver = self.driver
-        lg = Logout_page(driver)
-        # lg.switch_to_parent_window(pw)
-        lg.click_logut()
+#     def test_logout(self):
+#         driver = self.driver
+#         lg = Logout_page(driver)
+#         # lg.switch_to_parent_window(pw)
+#         lg.click_logut()
 
-    def test_mouse_hr(self):
-        driver = self.driver
-        mhr = mouse_hover_page(driver)
-        mhr.cancel_popup()
-        # mhr.mse_hr()
-        # mhr.clk_on_items()
+#     def test_mouse_hr(self):
+#         driver = self.driver
+#         mhr = mouse_hover_page(driver)
+#         mhr.cancel_popup()
+#         # mhr.mse_hr()
+#         # mhr.clk_on_items()
 
-    def test_footer(self):
-        sr.footer_link_one_by_one()
+#     def test_footer(self):
+#         sr.footer_link_one_by_one()
