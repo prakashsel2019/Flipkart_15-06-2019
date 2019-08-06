@@ -10,7 +10,8 @@ class Searching_page(WebGeneric):
         self.item = "//input[@placeholder='Search for products, brands and more']"
         self.collect_brand = "//*[@class='_3wU53n']"
         self.clk_add_cart = "//button[@class='_2AkmmA _2Npkh4 _2MWPVK']"
-        self.clk_remove_cart = "//span[contains(text(),'Remove')]"
+        self.clk_remove_cart = "//div[contains(text(),'Remove')]"
+        self.confirm_pop_up = "//div[@class='gdUKd9 _3Z4XMp _2nQDKB']"
         self.clk_help_center = "//*[contains(text(),'Help Center')]"
         self.footer_links_path = "//*[@class='_2NHqR1 row']//a"
         global wb
@@ -45,6 +46,10 @@ class Searching_page(WebGeneric):
 
     def remove_cart(self):
         wb.click('xpath', self.clk_remove_cart)
+        
+    def confirm_remove_pop_up(self):
+        wb.click('xpath', self.confirm_pop_up)
+        time.sleep(5)
 
     def click_help_center(self):
         wb.click('xpath', self.clk_help_center)
