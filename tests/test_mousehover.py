@@ -31,9 +31,9 @@ class TestMouseHover:
     def test_add_to_cart(self):
         sr.add_cart()
 
-#     def test_remove_from_cart(self):
-#         sr.remove_cart()
-#         sr.switch_parent(pw)
+    def test_remove_from_cart(self):
+        sr.remove_cart()
+        sr.switch_parent(pw)
 
 #     def test_click_help_center(self):
 #         sr.click_help_center()
