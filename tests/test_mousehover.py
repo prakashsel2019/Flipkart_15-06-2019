@@ -33,6 +33,7 @@ class TestMouseHover:
 
     def test_remove_from_cart(self):
         sr.remove_cart()
+        sr.confirm_remove_pop_up()
         sr.switch_parent(pw)
 
 #     def test_click_help_center(self):
